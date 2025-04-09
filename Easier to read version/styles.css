@@ -101,7 +101,23 @@ body {
     text-align: center;
 }
 
+/* Subtle fade-in animation for content */
+#opening {
+    animation: fadeIn .75s ease-in-out;
+}
 
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 #Name_Input_Container {
     display: flex;
@@ -159,7 +175,7 @@ body {
     width: 100%;
     max-width: 700px;
     height: auto;
-    padding: 30px;
+    padding: 10px;
     background-color: #252537;
     /* Dark neutral background */
     border-radius: 20px;
@@ -474,29 +490,14 @@ body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     border: 1px solid #cc2323;
 }
+
+#game_buttons{
+    display: flex;
+}
+#word_bank_button{
+    margin-left: 10px;
+}
     
-/* 
-    Animations 
-*/
-
-/* Subtle fade-in animation for content */
-#opening {
-    animation: fadeIn .75s ease-in-out;
-}
-
-/* Fade-in animation keyframes */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Fade-in animation */
 .fade-in {
     animation: fadeIn 1s forwards;
